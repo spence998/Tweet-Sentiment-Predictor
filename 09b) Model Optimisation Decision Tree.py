@@ -7,7 +7,7 @@ from datetime import datetime
 folder_location = r'C:\\Users\\Giada\\Documents\\Python files\\Twitter tweet positivity ranking\\'
 
 #Reading in the dataframe and creating seperate dataframes for the negative and positive statements
-df_all = pd.read_csv(folder_location + 'final_dset.csv', index_col=0)
+df_all = pd.read_csv(folder_location + 'modelling_dset.csv', index_col=0)
 df_pos = df_all.loc[df_all['SCORE'] > -0.5]
 
 Y = df_pos.pop("SCORE")
