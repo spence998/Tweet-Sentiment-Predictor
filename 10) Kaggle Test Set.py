@@ -109,10 +109,10 @@ for sentence in range(len(test_data)):
 			dataset_final.iloc[sentence,category_number] = dataset_final.iloc[sentence,category_number] + 1
 	print(split_text)
 
-dataset_final.to_csv(folder_location+'final_dset_train.csv',index=True)
+modelling_dset.to_csv(folder_location+'modelling_kaggle_dset_train.csv',index=True)
 
 
-pos_probs,neg_probs =	model_predictions(dataset=dataset_final
+pos_probs,neg_probs =	model_predictions(dataset=modelling_dset
 						,pos_model=pos_model
 						,neg_model=neg_model
 						,positive_target=test_target_pos
@@ -144,4 +144,4 @@ total_correct_predictions = test_data["ACCURACY"].sum()
 accuracy = total_correct_predictions/len(test_data)
 print(accuracy)
 
-test_data.to_csv(folder_location+'Output_dset2.csv',index=True)
+test_data.to_csv(folder_location+'Output_dset.csv',index=True)
