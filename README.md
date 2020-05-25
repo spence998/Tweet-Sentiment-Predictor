@@ -27,7 +27,7 @@ Code description:
     2) Collating the tweets into one combined dataset
     
     3) Building of word2vec model. Hyperparameters have been optimised later on in
-    the project.
+    the project using code 4/5 and a grid search.
     
     4-5) Visualisation and analysis of the word2vec model which are used to
     optimise the model.
