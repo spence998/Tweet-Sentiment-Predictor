@@ -2,28 +2,41 @@
 
 Description:
 
-Project to build a model which is able to classify tweets based upon their "positivity"
+Project to build a model which is able to classify the sentiment of tweets
 
-The project consists of XX codes which are run in order
+The project consists of 10 codes which are run in order
+
+######################## Requirements ##########################
+
+Requirements:
+
+    Packages - Pandas               - Numpy
+             - Scikit learn         - MatplotLib
+             - NLTK                 - Gensim
+             - 
 
 ##############################################################
 
-Code:
+Code description:
   
-    1-4) Scraping data from twitter and cleaning the data into a format that can
+    1a-c) Scraping data from twitter and cleaning the data into a format that can
     be used by the word2vec. Due to the nature of the twitter of twitter API only 
-    ~2000 tweets can be downloaded every 15 minutes. Therefore codes 1-3 were 
-    needed to be run multiple times
+    ~2000 tweets can be downloaded every 15 minutes. Therefore all sections were 
+    needed to be run multiple times.
     
-    5) Building of word2vec model
+    2) Collating the tweets into one combined dataset
     
-    6-7) Visualisation and analysis of the word2vec model which are used to
-    optimise the model
+    3) Building of word2vec model.
     
-    8) Creation of categories to group each word from the tweets into
+    4-5) Visualisation and analysis of the word2vec model which are used to
+    optimise the model.
     
-    9) Creates a dataset by counting the number of words from each tweet which 
-    are classified into each category based on their cosine similarity
+    6) Creation of categories to group each word of the tweets into.
+    
+    7) Creation of final dataset that can be used to make models. 
+    
+    8)
+    
 
 
 ##############################################################
