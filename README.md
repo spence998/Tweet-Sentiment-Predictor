@@ -2,7 +2,7 @@
 
 Description:
 
-Project to build a model which is able to classify the sentiment of tweets
+Project to build a model which is able to classify the sentiment of tweets.
 
 The project consists of 10 codes which are run in order
 
@@ -13,7 +13,7 @@ Requirements:
     Packages - Pandas               - Numpy
              - Scikit learn         - MatplotLib
              - NLTK                 - Gensim
-             - 
+             - Tweepy               - Pickle
 
 ##############################################################
 
@@ -26,16 +26,33 @@ Code description:
     
     2) Collating the tweets into one combined dataset
     
-    3) Building of word2vec model.
+    3) Building of word2vec model. Hyperparameters have been optimised later on in
+    the project.
     
     4-5) Visualisation and analysis of the word2vec model which are used to
     optimise the model.
     
-    6) Creation of categories to group each word of the tweets into.
+    6) Creation of categories which will be used to group words based on individual words
+    cosine similarity to each other. This is done by using the most frequent words which 
+    are not "similar" to each other.
     
-    7) Creation of final dataset that can be used to make models. 
+    7) Creation of modelling dataset created by categorising each word to a coresponding
+    category made in code 06 using each words similarity.
     
-    8)
+    8) Testing of several models to determine the most predictive model to use. The 
+    performance of the models is determined using gini in predicting positive and 
+    negative sentiments. 
+    
+    Two logistic regression models were used, one for predicting positive and one 
+    predicting negative sentiments. These models were chosen due to their relatively 
+    high gini and low overfitting to the training data compared to the test data.
+    
+    9a-b) Optimising of hyperparameters for decision tree and random forest models using 
+    a grid search.
+    
+    10a-c) Testing the model using a dataset downloaded from kaggle. The probability  on both the 
+    positive and negative are used in conjunction with a set of score rules to predict the
+    outcome of the model. 
     
 
 
