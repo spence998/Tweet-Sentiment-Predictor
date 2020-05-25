@@ -86,7 +86,7 @@ def decistion_tree_model(X_train,X_test,Y_train,Y_test,target):
 folder_location = r'C:\\Users\\Spencer\\Documents\\Python files\\Twitter tweet positivity ranking\\'
 
 #Reading in the dataframe and creating seperate dataframes for the negative and positive statements
-df_all = pd.read_csv(folder_location + 'final_dset.csv', index_col=0)
+df_all = pd.read_csv(folder_location + 'modelling_dset.csv', index_col=0)
 df_pos = df_all.loc[df_all['SCORE'] > -0.5]
 df_neg = df_all.loc[df_all['SCORE'] < 0.5]
 df_neg['SCORE'] = abs(df_neg['SCORE'])
