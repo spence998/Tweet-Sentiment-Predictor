@@ -10,7 +10,7 @@ Files required to run the code and outputs for the code are stored in the
 Additional Files used and output folder in the repository. These are to be
 placed in the folder location specified in the code.
 
-######################## Output ###############################
+######################## Output ################################
 
 The final predictions can be found in the file Outcome.csv in the Additional
 files used and output folder.
