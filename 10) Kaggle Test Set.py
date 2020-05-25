@@ -38,7 +38,7 @@ file.close()
 
 #Pulling the test dataset 
 dset_folder_location = r'C:\\Users\\Spencer\\Documents\\Python files\\Twitter tweet positivity ranking\\tweet-sentiment-extraction\\'
-test_data = pd.read_csv(dset_folder_location + "train.csv",index_col="textID")
+test_data = pd.read_csv(dset_folder_location + "test.csv",index_col="textID")
 text_list = test_data["text"]
 test_target = list(test_data["sentiment"])
 
@@ -109,7 +109,7 @@ for sentence in range(len(test_data)):
 			dataset_final.iloc[sentence,category_number] = dataset_final.iloc[sentence,category_number] + 1
 	print(split_text)
 
-modelling_dset.to_csv(folder_location+'modelling_kaggle_dset_train.csv',index=True)
+modelling_dset.to_csv(folder_location+'modelling_kaggle_dset_test.csv',index=True)
 
 
 pos_probs,neg_probs =	model_predictions(dataset=modelling_dset
