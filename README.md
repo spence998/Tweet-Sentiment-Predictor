@@ -4,7 +4,7 @@ Description:
 
 Project to build a model which is able to classify the sentiment of tweets.
 
-The project consists of 10 codes which are run in order.
+The project consists of 10 codes which should be run in order.
 
 Files required to run the code and outputs for the code are stored in the
 Additional Files used and output folder in the repository. These are to be
