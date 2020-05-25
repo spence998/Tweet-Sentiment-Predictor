@@ -42,7 +42,9 @@ with open(folder_location+'pos_model.sav', 'rb') as pickle_file:
 with open(folder_location+'neg_model.sav', 'rb') as pickle_file:
 	neg_model = pickle.load(pickle_file)
 
-pos_probs, neg_probs = 	model_predictions(dataset=dataset_final
+modelling_dset = pd.read_csv(folder_location+'modelling_kaggle_dset_train.csv', low_memory=False,index_col=0)	
+	
+pos_probs, neg_probs = 	model_predictions(dataset=modelling_dset
 						,pos_model=pos_model
 						,neg_model=neg_model
 						,positive_target=test_target_pos
