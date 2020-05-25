@@ -52,7 +52,7 @@ for tweet_number in range(len(df)):
 
 dataset_final["SCORE"] = SCORE
 
-#dataset_final.to_csv(folder_location+'final_dset.csv',index=True)
+dataset_final.to_csv(folder_location+'modelling_dset.csv',index=True)
 
 
 
