@@ -54,6 +54,8 @@ Code description:
     positive and negative are used in conjunction with a set of score rules to predict the
     outcome of the model. 
     
-
+    The final predictions can be found in the file Outcome.csv
+    
+    The model predicts the sentiments with an accuracy of 54%.
 
 ##############################################################
