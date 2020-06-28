@@ -19,8 +19,6 @@ The model predicts the sentiments with an accuracy of 54%.
 
 # Requirements
 
-To run the code change the directory folder location to where the files in the folder "files" are stored
-
 Requirements:
 
     Packages - Pandas               - Numpy
